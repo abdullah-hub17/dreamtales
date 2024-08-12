@@ -1,0 +1,53 @@
+.how-it-works {
+  color: white;
+  text-align: center;
+  background-color: #121212;
+  padding: 50px;
+} 
+
+.how-it-works h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 50px;
+  color: #ff9101;
+}
+
+.chakra-accordion .chakra-accordion__button {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 25px;
+  margin-bottom: 60px;
+  transition: background-color 0.3s ease;
+}
+
+.chakra-accordion .chakra-accordion__button:hover {
+  background-color: #ff00ff;
+}
+
+.chakra-accordion__panel {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.chakra-accordion__icon {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .how-it-works {
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .how-it-works {
+    margin-right: -105px;
+  }
+}

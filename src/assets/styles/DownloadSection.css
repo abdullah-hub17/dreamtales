@@ -1,0 +1,108 @@
+.download-section {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  color: white;
+  text-align: center;
+}
+
+.download-content{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px;
+  padding: 40px;
+}
+
+.download-content h2{
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.download-content p{
+  margin: 45px 0 60px 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+.download-buttons {
+  margin-top: 20px;
+}
+
+.download-btn {
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, #ae19ff, #4a63ff, #5f0085);
+  color: white;
+  padding: 12px 24px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+  display: inline-flex;
+  align-items: center;
+}
+
+.android-btn {
+  background-color: #3DDC84;
+  margin-left: 10px;
+}
+
+.android-icon {
+  margin-right: 8px;
+  font-size: 35px;
+}
+
+.ios-icon {
+  margin-right: 8px;
+  font-size: 35px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .download-section {
+    margin-left: 100px;
+  }
+  .download-buttons {
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .download-section {
+    margin-left: -50px;
+    margin-right: -150px;
+    padding-top: 180px;
+  }
+  .download-buttons {
+    margin-top: 7px;
+    padding: 10px;
+    display: block;
+  }
+  .download-content h2{
+    margin-top: -70px;
+    margin-bottom: 100px;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+  .download-content p{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 32px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,135 @@
+.footer {
+  padding: 40px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+}
+
+.extra {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+footer p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  border-top: 3px solid rgb(146, 146, 146);
+  padding: 30px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 150px;
+}
+
+.extra2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  color: white;
+  width: 70px;
+  height: 80px;
+  margin-left: 227px;
+  gap: 20px;
+}
+
+.social-icons h2 {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(255, 191, 0);
+}
+.social-icons a {
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 40px;
+  border-radius: 100px;
+}
+
+.social-icons a:hover {
+  color: #5a67d8;
+  background-color: aliceblue;
+}
+
+.subscribe {
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.subscribe-button {
+  background-color: rgb(255, 191, 0);
+  font-family: cursive;
+  margin-left: 10px;
+  padding: 9px;
+  border-style: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.subscribe-button:hover {
+  background-color: rgb(255, 149, 0);
+  color: rgb(0, 0, 0);
+  transition: 0.3s ease;
+}
+.subscribe-form input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.subscribe h2 {
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 2px solid rgb(255, 191, 0);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .footer{
+    margin-right: -105px;
+  }
+  .extra2 {
+    margin-left: 55px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer p {
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .footer{
+    margin-right: -105px;
+  }
+  .extra2 {
+    margin-left: -20px;
+    margin-bottom: -140px;
+    gap: 5px;
+    display: flex;
+  }
+  footer p {
+    margin-bottom: -20px;
+  }
+  .social-icons {
+    margin-top: 30px;
+  }
+}

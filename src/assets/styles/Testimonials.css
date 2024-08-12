@@ -1,0 +1,86 @@
+.testimonials {
+  background-image: url(../images/whatParentSay.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 160px;
+  color: white;
+  text-align: center;
+}
+
+.testimonial-carousel {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 15px 19px rgba(0, 0, 0, 1);
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.147);
+  padding: 40px;
+  border-radius: 15px;
+  font-style: italic;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease-in-out;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+.testimonials h2{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+.testimonial p{
+  font-size: 1.5rem;
+  color: rgb(255, 0, 251);
+  font-weight: 700;
+  margin-top: 10px;
+  border: 1px solid rgba(60, 59, 59, 0.42);
+  border-radius: 20px;
+}
+.testimonial h4 {
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.slick-dots{
+  padding: 65px;
+}
+.slick-dots li button:before {
+  color: rgb(0, 0, 0);
+}
+
+.slick-dots li.slick-active button:before {
+  color: #22ff00;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .testimonials{
+    margin-right: -105px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .testimonials{
+    margin-right: -105px;
+  }
+  .testimonials h2{
+    margin-top: -100px;
+    margin-left: -60px;
+    margin-right: -60px;
+  }
+  .testimonial-carousel {
+    margin-left: -80px;
+    margin-right: -80px;
+    max-width: 700px;
+    padding: 30px;
+    box-shadow: 0 15px 19px rgba(0, 0, 0, 1);
+  }
+}

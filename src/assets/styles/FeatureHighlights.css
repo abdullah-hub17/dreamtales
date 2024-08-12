@@ -1,0 +1,96 @@
+.feature {
+  background-image: url(../images/howItWork.jpg);
+  background-color: #2d3748;
+  padding: 30px;
+  border-radius: 8px;
+  margin: -5px;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.card{
+  margin: 30px;
+}
+.feature-highlights {
+  background-image: url(../images/howItWork.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 140vh;
+  background-color: #121212;
+  padding: 60px;
+  text-align: center;
+}
+
+.feature-highlights h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffcc00;
+}
+
+.button1{
+  background: linear-gradient(45deg, #ae19ff, #4a63ff, #5f0085);
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+  box-shadow: 0 0px 20px rgb(255, 213, 0);
+  transition: box-shadow 0.3s ease;
+}
+
+.button1:hover{
+  box-shadow: 0 0px 20px rgb(0, 144, 254);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  align-items: center;
+}
+
+.feature h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.feature p {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .feature-highlights{
+    margin-right: -105px;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  .feature-highlights{
+    margin-right: -105px;
+    background-attachment: fixed;
+    height: 210vh;
+  }
+}

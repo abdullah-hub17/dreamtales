@@ -1,0 +1,91 @@
+.hero {
+  background-image: url(../images/starrySky.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 250px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-top: 55px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 80px;
+}
+
+.cta-button1 {
+  background: linear-gradient(45deg, #ae19ff, #4a63ff, #5f0085);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsiveness */
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero {
+    padding: 40px;
+    margin-right: -105px;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-weight: bold;
+  }
+
+  .hero p {
+    font-size: 1.6rem;
+    margin-bottom: 100px;
+  }
+}
+
+/* Mobile (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+  .hero {
+    margin-right: -105px;
+  }
+  .hero h1 {
+    font-size: 40px;
+    margin-left: -200px;
+    margin-right: -200px;
+    margin-top: -100px;
+  }
+  .hero p {
+    margin-bottom: 100px;
+    margin-left: -200px;
+    margin-right: -200px;
+  }
+  .cta-button1 {
+    margin-left: -200px;
+    margin-right: -200px;
+  }
+}
