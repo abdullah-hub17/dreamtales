@@ -2,6 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.cta-button {
+  background: linear-gradient(45deg, #ae19ff, #4a63ff, #5f0085);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -22,6 +35,7 @@ html {
   text-transform: uppercase;
   letter-spacing: 1px;
   animation: glow 1.5s infinite alternate;
+  margin-left: 50px;
 }
 
 @keyframes glow {
@@ -79,7 +93,6 @@ html {
 
 /* Responsiveness */
 
-/* Tablet */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .navbar {
     padding: 16px;
@@ -104,7 +117,6 @@ html {
   }
 }
 
-/* Mobile (max-width: 767px) */
 @media only screen and (max-width: 767px) {
   .navbar {
     padding: 10px;
